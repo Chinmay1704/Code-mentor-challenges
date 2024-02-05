@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital@0;1&display=swap");
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Figtree", "sans-serif";
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div{
+    background-color: var(--Yellow);
+    padding: 30px;
+    width: 75vw;
+    margin: 25px 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 2px 1px hsl(0deg 0% 68.19%);
+    border-radius: 15px;
+}
+
+.blog-container {
+  width: 25%;
+  background: var(--White);
+  padding: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid var(--Black);
+  border-radius: 15px;
+  box-shadow: 10px 10px var(--Black);
+}
+
+.blog-container:hover {
+  box-shadow: 20px 20px var(--Black);
+}
+
+.blog-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.blog-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toggle {
+  background-color: var(--Yellow);
+  width: fit-content;
+  padding: 5px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+.blog-title h2 {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.blog-title h2:hover {
+  color: var(--Yellow);
+}
+
+.blog-title p {
+  font-size: 16px;
+  color: var(--Grey);
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.blog-footer img {
+  width: 36px;
+}
+
+.blog-footer span {
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background: var(--Yellow);
+    }
+    .div{
+        background: transparent;
+    }
+
+  .blog-container {
+    width: 75%;
+  }
+}
